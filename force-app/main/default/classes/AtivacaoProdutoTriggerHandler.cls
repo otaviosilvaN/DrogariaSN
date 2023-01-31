@@ -15,7 +15,7 @@ public with sharing class AtivacaoProdutoTriggerHandler {
         }
         
     }
-    // Após o Estoque do produto estiver zerado, o mesmo é inativo, impedindo novas vendas no sistema
+    // Após o Estoque do produto estiver zerado, o mesmo é inativo, impedindo novas vendas no sistema.
     public static void afterUpdate (){
         Estoque__c estoque = (Estoque__c) trigger.New[0];
 
