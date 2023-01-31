@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Codigo_da_categoria__c</fullName>
+    <description>Categoria de produtos vendidos pela loja</description>
+    <displayFormat>C-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>Essas são as categorias para produtos vendidos na loja</inlineHelpText>
+    <label>Código da categoria</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>
