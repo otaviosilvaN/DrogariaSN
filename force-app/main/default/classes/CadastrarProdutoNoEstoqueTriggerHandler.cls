@@ -20,6 +20,7 @@ public with sharing class CadastrarProdutoNoEstoqueTriggerHandler {
        if(produto.Ativo__c == true){
            
            insert EstoqueDAO.createRecord(produto);
+           List<Estoque__c> lista = EstoqueDAO.getStockProductById(produto.Id);
 
        }
    }
@@ -36,7 +37,8 @@ public with sharing class CadastrarProdutoNoEstoqueTriggerHandler {
         */
     
         if(estoque.isEmpty()){
-			insert EstoqueDAO.createRecord(produto);            
+			insert EstoqueDAO.createRecord(produto);
+            //insert EstoqueDAO.createStockNumber(inserirEstoque);       
         }
         
     }

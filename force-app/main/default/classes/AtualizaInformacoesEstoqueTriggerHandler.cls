@@ -23,6 +23,7 @@ public with sharing class AtualizaInformacoesEstoqueTriggerHandler {
             }
             update e;
         }
+        
 
     }
 }
